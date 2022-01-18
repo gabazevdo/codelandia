@@ -148,15 +148,15 @@ main {
   justify-content: center;
 
   width: 30%;
-  height: 31vh;
-  border: #6100ff 1px solid;
+  height: 32vh;
   margin: 1%;
-  transition: 1s;
+  transition: .5s;
 }
 
 .card img {
   width: 100%;
-  transition: 1s;
+  transition: .5s;
+  
 }
 .card img:hover {
   opacity: 18%;
