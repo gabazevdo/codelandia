@@ -148,11 +148,20 @@ main {
   justify-content: center;
 
   width: 30%;
-  height: 50vh;
+  height: 31vh;
   border: #6100ff 1px solid;
   margin: 1%;
   transition: 1s;
 }
+
+.card img {
+  width: 100%;
+  transition: 1s;
+}
+.card img:hover {
+  opacity: 18%;
+}
+
 
 .card:hover {
   background-color: #6100ff;
