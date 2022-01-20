@@ -23,65 +23,65 @@
       </div>
     </header>
     <main>
-        <article>
+         <article class="container-post">
             <div class="date">
               <span>17 de jan, 2022</span>
               <img src="../desafio_01/images/heart.png" alt="" />
             </div>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="title">Lorem ipsum</h3>
+            <p class="description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
               earum at illo repudiandae dolorem rerum laborum, fugiat totam ea
               commodi, magnam impedit soluta? Recusandae reprehenderit quidem
               aspernatur odio qui nobis?
             </p>
           </article>
-          <article>
+           <article class="container-post">
             <div class="date">
               <span>17 de jan, 2022</span>
               <img src="../desafio_01/images/heart.png" alt="" />
             </div>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="title">Lorem ipsum</h3>
+            <p class="description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
               earum at illo repudiandae dolorem rerum laborum, fugiat totam ea
               commodi, magnam impedit soluta? Recusandae reprehenderit quidem
               aspernatur odio qui nobis?
             </p>
           </article>
-          <article>
+           <article class="container-post">
             <div class="date">
               <span>17 de jan, 2022</span>
               <img src="../desafio_01/images/heart.png" alt="" />
             </div>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="title">Lorem ipsum</h3>
+            <p class="description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
               earum at illo repudiandae dolorem rerum laborum, fugiat totam ea
               commodi, magnam impedit soluta? Recusandae reprehenderit quidem
               aspernatur odio qui nobis?
             </p>
           </article>
-          <article>
+           <article class="container-post">
             <div class="date">
               <span>17 de jan, 2022</span>
               <img src="../desafio_01/images/heart.png" alt="" />
             </div>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="title">Lorem ipsum</h3>
+            <p class="description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
               earum at illo repudiandae dolorem rerum laborum, fugiat totam ea
               commodi, magnam impedit soluta? Recusandae reprehenderit quidem
               aspernatur odio qui nobis?
             </p>
           </article>
-          <article>
+           <article class="container-post">
             <div class="date">
               <span>17 de jan, 2022</span>
               <img src="../desafio_01/images/heart.png" alt="" />
             </div>
-            <h3>Lorem ipsum</h3>
-            <p>
+            <h3 class="title">Lorem ipsum</h3>
+            <p class="description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
               earum at illo repudiandae dolorem rerum laborum, fugiat totam ea
               commodi, magnam impedit soluta? Recusandae reprehenderit quidem
@@ -95,5 +95,21 @@
         <p>Desenvolvido por <a href="https://github.com/gabazevdo" target="_blank"> < Gabazevedo /></a> </p>
 
     </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+          origin: 'top',
+          distance: '50px',
+          duration: 2000,
+          reset: true
+      });
+
+      ScrollReveal().reveal('.container-post', { delay: 200 });
+      ScrollReveal().reveal('.date', { delay: 300 });
+      ScrollReveal().reveal('.title', { delay: 400 });
+      ScrollReveal().reveal('.description', { delay: 500 });
+</script>
   </body>
 </html>
