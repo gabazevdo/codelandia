@@ -1,0 +1,52 @@
+/* Import de fonts */
+/* para utilizar em alguns títulos - font com sublinhado */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+/* font-family: 'Montserrat Subrayada', sans-serif; */
+
+/* Font para utilizar no site por completo */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* ----------------------------------------------- */
+
+/* Variáveis com cores */
+:root {
+    --black:#181818;
+    --white: #f9f9f9;
+    --greyBg: #EBE9EA; 
+  
+    --title: #313131;
+    --text: #181818;
+  }
+  
+  /* Reset HTML */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Configurações básicas */
+  html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: var(--white);
+  }
+
+  
+
+
+/* ------------------ Responsividade ----------------------------- */
+  /* Tablet */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    }
+  
+  /* Smartphone */
+  @media screen and (max-width: 767px) {
+
+  }
+  
