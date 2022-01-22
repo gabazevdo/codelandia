@@ -57,13 +57,14 @@ h2 {
 p {
   font-weight: 200;
   color: #f4f4f4;
-  font-size: 28px;
+  font-size: 1.5rem;
 }
 a {
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
   color: #f4f4f4;
+  display: block;
 }
 
 span {
@@ -125,21 +126,21 @@ main {
 }
 
 .projetos {
-  width: 90%;
-
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .containerProjetos {
-  display: flex;
+  display: grid;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 40px;
-
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%;
+  width: 90%;
+  margin-top: 4%;
 }
 
 .card {
@@ -147,26 +148,36 @@ main {
   align-items: center;
   justify-content: center;
 
-  width: 70%;
-  height: auto;
-  margin: 1%;
-  transition: .5s;
+  width: 100%;
+  transition: 0.5s;
+  position: relative;
+}
+
+.titulo_projeto {
+  position: absolute;
+  color: #fff;
+  visibility: hidden;
+}
+
+.card:hover h3 {
+  visibility: visible;
+  padding: 2% 10%;
+  border: 1px solid #fff;
 }
 
 .card img {
   width: 100%;
-  transition: .5s;
-  
+  transition: 0.5s ease;
 }
 .card img:hover {
   opacity: 18%;
 }
 
-
 .card:hover {
   background-color: #6100ff;
   cursor: pointer;
 }
+
 /* Footer */
 footer {
   display: flex;
@@ -200,6 +211,7 @@ footer {
 /* Reposividade */
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  
   .card {
     display: flex;
     align-items: center;
@@ -213,6 +225,8 @@ footer {
 
 /* Smartphone */
 @media screen and (max-width: 767px) {
+
+
   h1 {
     font-weight: 600;
     color: #f4f4f4;
@@ -230,7 +244,6 @@ footer {
   p {
     font-weight: 200;
     color: #f4f4f4;
-    font-size: 28px;
   }
   a {
     cursor: pointer;
@@ -253,5 +266,19 @@ footer {
     display: none;
   }
 
-
+  .containerProjetos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    width: 80%;
+    margin-top: 4%;
+  }
+  #projetos {
+    font-size: 2.5rem;
+  }
+  .projetos p{
+    font-size: 1.1rem;
+  }
 }
