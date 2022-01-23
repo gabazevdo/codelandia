@@ -162,16 +162,11 @@ button:hover {
 /* reposividade */
 /* smartphone */
 @media screen and (max-width: 768px) {
-  
-    html {
-        font-size: 1.5rem;
-      }
-    
-      button {
-        font-size: 1.01rem;
-      }
-  
-    .container_imagem {
+  button {
+    font-size: 1.01rem;
+  }
+
+  .container_imagem {
     display: none;
   }
 
