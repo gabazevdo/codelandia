@@ -1,0 +1,22 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Variáveis com cores */
+:root {
+  --black: #181818;
+  --white: #f9f9f9;
+  --grey: #e4e4e4;
+  --greenLight: #658e76;
+  --greenDark: #1a4855;
+
+  --background: linear-gradient(270deg, #1a4855 0%, #628e75 100%);
+}
+
+/* Reset HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
