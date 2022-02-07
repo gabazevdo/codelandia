@@ -1,0 +1,306 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Variáveis com cores */
+:root {
+  --black: #181818;
+  --white: #f9f9f9;
+  --grey: #e4e4e4;
+  --greenLight: #658e76;
+  --greenDark: #1a4855;
+
+  --background: linear-gradient(270deg, #1a4855 0%, #628e75 100%);
+}
+
+/* Reset HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100%;
+
+  background: var(--background);
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+
+h1,
+h2,
+button {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+li {
+  list-style-type: none;
+}
+
+li {
+  animation: 2s;
+  -webkit-animation: 2s;
+}
+li :hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header {
+  height: 10vh;
+  width: 80%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imgLogo img {
+  width: 30%;
+}
+
+nav {
+  width: 20%;
+}
+
+.redeSocial {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 80%;
+  height: 70vh;
+
+  margin-top: 5%;
+}
+
+.info_chihiro {
+  width: 45%;
+  height: auto;
+}
+
+.hayao {
+  margin-bottom: 3%;
+}
+
+.tag_p {
+  margin: 3% 0;
+}
+
+.img_Chihiro {
+  width: 45%;
+}
+.img_Chihiro img {
+  width: 100%;
+  animation: bounce 2s infinite alternate;
+  -webkit-animation: bounce 2s infinite alternate;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 3% 0;
+}
+.button_1 img {
+  margin-right: 10px;
+}
+
+.button_1 {
+  height: 45px;
+  width: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--greenLight);
+  border: 1px var(--greenLight) solid;
+  transform: skew(-20deg);
+
+  transition: 0.5s;
+}
+.button_1:hover {
+  background-color: transparent;
+}
+.button_2 {
+  transition: 0.5s;
+
+  height: 45px;
+  width: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(-20deg);
+  background-color: transparent;
+  border: 1px var(--greenLight) solid;
+}
+.button_2:hover {
+  background-color: var(--greenLight);
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-35px);
+  }
+}
+
+/* ------------------ Responsividade ----------------------------- */
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 10vh;
+    width: 80%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .imgLogo img {
+    width: 40%;
+  }
+
+  nav {
+    width: 20%;
+    margin-right: 100px;
+  }
+
+  .redeSocial {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  section {
+    position: relative;
+    z-index: 1;
+  }
+  .img_Chihiro {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    opacity: .3;
+  }
+  .img_Chihiro img {
+    width: 100%;
+    animation: bounce 2s infinite alternate;
+    -webkit-animation: bounce 2s infinite alternate;
+  }
+
+  .info_chihiro {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width: 767px) {
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+
+p{
+    font-weight: 600;
+}
+
+    header {
+        height: 10vh;
+        width: 80%;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+      .imgLogo img {
+        width: 40%;
+      }
+    
+      nav {
+        width: 50%;
+        margin-right: 50px;
+      }
+    
+      .redeSocial {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+      }
+      .redeSocial a img{
+          width: 80%;
+
+      }
+    
+      section {
+        position: relative;
+        z-index: 1;
+      }
+      .img_Chihiro {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        opacity: .3;
+      }
+      .img_Chihiro img {
+        width: 100%;
+        animation: bounce 2s infinite alternate;
+        -webkit-animation: bounce 2s infinite alternate;
+      }
+    
+      .info_chihiro {
+        position: relative;
+        z-index: 2;
+        width: 80%;
+      }
+
+      .buttons{
+          margin-top: 5vh;
+          height: 12vh;
+          flex-direction: column;
+
+      }
+
+      section{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90%;
+      }
+}
