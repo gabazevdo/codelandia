@@ -125,7 +125,7 @@ main {
   justify-content: space-between;
   width: 90%;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   font-weight: 700;
   text-shadow: 1px 1px 20px var(--dark);
@@ -149,6 +149,7 @@ button {
 }
 
 button:nth-child(1) {
+  border: #023966 1px solid;
   background-color: var(--blue);
   padding: 2% 6%;
   transition: 0.5s;
@@ -163,6 +164,7 @@ button:nth-child(2) {
   border: 0.1px solid var(--white);
   padding: 2% 6%;
   transition: 0.5s;
+  margin-left: 40px;
 }
 
 button:nth-child(2):hover {
