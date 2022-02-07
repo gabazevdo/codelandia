@@ -6,37 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio 05</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="imgLogo">
-        <img src="./image/logo.svg" alt="Logo Chihiro" />
+        <img  src="./image/logo.svg" alt="Logo Chihiro" />
       </div>
       <nav>
-        <ul>
-          <li class="redeSocial"><img src="./image/facebook.svg" alt="icone facebook" /></li>
-          <li class="redeSocial"><img src="./image/instagram.svg" alt="icone instagram" /></li>
-          <li class="redeSocial"><img src="./image/twitter.svg" alt="icone twitter" /></li>
-          <li class="redeSocial"><img src="./image/youtube.svg" alt="icone youtube" /></li>
+        <ul class="redeSocial">
+          <li>
+            <a
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+              href="https://www.facebook.com"
+              target="_blank"
+            >
+              <img src="./image/facebook.svg" alt="icone facebook" />
+            </a>
+          </li>
+          <li>
+            <a
+              data-aos="fade-in"
+              data-aos-easing="linear"
+              data-aos-duration="2000"
+              href="https://www.instagram.com"
+              target="_blank"
+            >
+              <img src="./image/instagram.svg" alt="icone instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="2500"
+              href="https://www.twitter.com"
+              target="_blank"
+            >
+              <img src="./image/twitter.svg" alt="icone twitter" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="3000"
+              href="https://www.youtube.com"
+              target="_blank"
+            >
+              <img src="./image/youtube.svg" alt="icone youtube" />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <main>
+      <section>
         <div class="info_chihiro">
+          <div class="hayao" data-aos="zoom-in-right" data-aos-duration="1500">
             <h2>hayao miyazaki</h2>
+          </div>
+          <div
+            class="a_viagem"
+            data-aos="zoom-out-right"
+            data-aos-duration="2000"
+          >
             <h1>a viagem de chihiro</h1>
+          </div>
+          <div class="tag_p" data-aos="zoom-in-right" data-aos-duration="1500">
             <p>
-                Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais. 
+              Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles
+              que a desobedecem são transformados em animais.
             </p>
+          </div>
+          <div class="buttons">
+            <a class="button_1" href="">
+              <img src="./image/Vector.svg" alt="icone play" />
+              <span> Assistir agora </span>
+            </a>
+
+            <a            
+             class="button_2"  href="">
+              <span> Assistir ao trailer </span>
+            </a>
+          </div>
         </div>
-        <span class="spanButton">
-            <img src="./image/Vector.svg" alt="icone play">
-            assistir agora
-        </span>
-        <span class="spanButton">
-            assistir ao trailer
-        </span>
+
+        <div class="img_Chihiro">
+          <img src="./image/ilustracao.png" alt="fantasminha chihiro" />
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
