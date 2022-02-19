@@ -1,0 +1,131 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+/* Variáveis com cores */
+:root {
+  --red-light: #ff4656;
+  --dark: #1f2326;
+  --white: #fff;
+
+  --title: #313131;
+  --text: #b6b6b6;
+
+  --linear: linear-gradient(90deg, #ff4656 0%, #1f2326 100%);
+}
+
+/* Reset HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configurações básicas */
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: url("../images/fon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 80vh;
+}
+
+.container-heroes {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  padding: 0 10%;
+  position: fixed;
+  left: 0;
+  top: 30%; 
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.1rem var(--white);
+}
+
+.card-hero {
+  position: relative;
+  margin-right: 200px;
+}
+
+.stroke {
+  position: absolute;
+  margin-top: -6px;
+  margin-left: -6px;
+  z-index: 0;
+}
+
+.img-hero {
+  position: absolute;
+  z-index: 2;
+}
+
+.div-heroes {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    grid-template-areas: "omen sage sova"; 
+}
+.omen{
+    grid-area: omen; 
+}
+.sage{
+    grid-area: sage; 
+}
+.sova{
+    grid-area: sova; 
+}
+
+.suke {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.suke img {
+  width: 60%;
+}
+
+footer {
+  padding: 2rem 10%;
+
+  position: fixed;
+  bottom: 0;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+}
