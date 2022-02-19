@@ -187,7 +187,7 @@ footer {
 
   position: relative;
 
-  margin-top: 50px;
+  margin-top: 20vh;
   width: 100%;
   padding: 1% 5%;
 }
@@ -206,6 +206,12 @@ footer {
   border-radius: 50%;
 
   cursor: pointer;
+
+
+}
+
+.voltarTopo a img{
+  height: 40px;
 }
 
 /* Reposividade */
