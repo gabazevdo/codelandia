@@ -72,14 +72,16 @@ h1 {
 }
 
 .card-hero {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-right: 200px;
+
 }
 
 .stroke {
   position: absolute;
-  margin-top: -6px;
-  margin-left: -6px;
+  margin-top: -8px;
+  margin-left: -8px;
   z-index: 0;
 }
 
@@ -87,7 +89,11 @@ h1 {
   position: absolute;
   z-index: 2;
 }
-
+.name-hero{
+  color: var(--red-light);
+  margin-top: 180px;
+  display: flex;
+}
 .div-heroes {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
